@@ -9,7 +9,7 @@ class Movie {
     public $durata;      // variabili d'istanza
 
     // costruttore
-    public function __construct($titolo, $regista, $genere, $anno, $durata) {
+    public function __construct($regista,$titolo,  $genere, $durata,  $anno,) {
         $this->titolo = $titolo;
         $this->regista = $regista;
         $this->genere = $genere;
@@ -17,15 +17,15 @@ class Movie {
         $this->durata = $durata;
     }
 
-
-
-
-
-
-
-
+    // metodo
+    public function info() {
+        return "Con Regista {$this->regista} esce '{$this->titolo}' dal genere {$this->genere} della durata di '{$this->durata}' nell'anno{$this->anno} .";
+    }
 
 }
+
+
+
 
 
 
